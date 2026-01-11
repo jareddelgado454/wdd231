@@ -1,0 +1,28 @@
+/* Estilos Base */
+body { font-family: 'Roboto', sans-serif; margin: 0; }
+
+header {
+    display: flex; /* Cumple el requisito de display:flex */
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column; /* Columna en móvil */
+    background-color: #444;
+}
+
+nav a { color: white; padding: 1rem; text-decoration: none; text-align: center; }
+
+#course-cards {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna en móvil */
+    gap: 10px;
+    padding: 1rem;
+}
+
+.course-card { border: 1px solid #ccc; padding: 10px; text-align: center; }
+.completed { background-color: #d1e7dd; border-color: #a3cfbb; } /* Marca completados */

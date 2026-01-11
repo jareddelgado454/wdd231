@@ -1,26 +1,62 @@
-<header>
-    <img src="images/logo.svg" alt="Logo">
-    <span>Jared Delgado</span>
-    <button id="menu" aria-label="Abrir menú">☰</button>
-</header>
-<nav>
-    <ul class="navigation">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="chamber/index.html">Chamber</a></li>
-        <li><a href="project/index.html">Final Project</a></li>
-    </ul>
-</nav>
-<main>
-    <h1>Home</h1>
-    <div class="filters">
-        <button id="all">All</button>
-        <button id="wdd">WDD</button>
-        <button id="cse">CSE</button>
-    </div>
-    <div id="course-cards"></div>
-    <p>Total Credits: <span id="total-credits"></span></p>
-</main>
-<footer>
-    <p>&copy;<span id="currentyear"></span> | Tu Nombre | Tu País</p>
-    <p id="lastModified"></p>
-</footer>
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Web Frontend II - Jared Delgadoe</title>
+    <meta name="description" content="Course home page for WDD 231, exploring dynamic web development.">
+    <meta name="author" content="Jared Delgado">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Course Logo" width="100">
+        <span>Jared Delgado</span>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="chamber/index.html">Chamber</a>
+        <a href="project/index.html">Final Project</a>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        <div class="filters">
+            <button id="all">All</button>
+            <button id="wdd">WDD</button>
+            <button id="cse">CSE</button>
+        </div>
+        
+        <section id="courses">
+            <h2>Course List</h2>
+            <div id="course-cards"></div>
+            <p>Total Credits: <span id="total-credits"></span></p>
+        </section>
+
+        <section>
+            <h2>Learning Resources</h2>
+            <p>Utilizing MDN, W3Schools, and course materials.</p>
+        </section>
+
+        <section>
+            <h2>Contact Info</h2>
+            <p>Available via Canvas or Slack.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Tu Nombre | Tu País</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
