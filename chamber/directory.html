@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <title>Chamber of Commerce Directory</title>
 
-  <meta name="description" content="Local Chamber of Commerce business directory">
+  <meta name="description" content="Explore the City Chamber of Commerce business directory and discover trusted local companies in your community.">
+
   <meta name="author" content="Jared Delgado">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,9 +14,13 @@
 
   <!-- Facebook Open Graph -->
   <meta property="og:title" content="Chamber of Commerce Directory">
-  <meta property="og:description" content="Find local businesses in our chamber">
-  <meta property="og:image" content="images/logo.png">
+  <meta property="og:description" content="Discover local businesses, services, and organizations listed in the City Chamber of Commerce directory and support your local economy.">
+  <meta property="og:image" content="https://jareddelgado454.github.io/wdd231/chamber/images/logo.png">
   <meta property="og:url" content="https://username.github.io/wdd231/chamber/directory.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles/normalize.css">
@@ -26,7 +31,7 @@
 <body>
   <header>
     <img src="images/logo.png" alt="Chamber Logo">
-    <h1>City Chamber of Commerce</h1>
+    <span>City Chamber of Commerce</span>
   </header>
 
   <nav>
@@ -39,6 +44,7 @@
   </nav>
 
   <main>
+    <h1>City Chamber of Commerce</h1>
     <section class="view-buttons">
       <button id="grid">Grid View</button>
       <button id="list">List View</button>
@@ -54,6 +60,6 @@
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
 
-  <script src="scripts/directory.js"></script>
+  <script src="scripts/directory.js" defer></script>
 </body>
 </html>

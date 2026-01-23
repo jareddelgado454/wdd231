@@ -1,5 +1,6 @@
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
   }
   
@@ -92,5 +93,10 @@ body {
   
   nav ul {
     flex-wrap: wrap;
+  }
+
+  
+nav ul a {
+    color: white;
   }
   
