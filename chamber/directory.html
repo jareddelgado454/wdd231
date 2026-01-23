@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chamber of Commerce Directory</title>
+
+  <meta name="description" content="Local Chamber of Commerce business directory">
+  <meta name="author" content="Jared Delgado">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.png">
+
+  <!-- Facebook Open Graph -->
+  <meta property="og:title" content="Chamber of Commerce Directory">
+  <meta property="og:description" content="Find local businesses in our chamber">
+  <meta property="og:image" content="images/logo.png">
+  <meta property="og:url" content="https://username.github.io/wdd231/chamber/directory.html">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.png" alt="Chamber Logo">
+    <h1>City Chamber of Commerce</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="directory.html" class="active">Directory</a></li>
+      <li><a href="#">Join</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="view-buttons">
+      <button id="grid">Grid View</button>
+      <button id="list">List View</button>
+    </section>
+
+    <section id="members" class="grid"></section>
+  </main>
+
+  <footer>
+    <p>Contact: info@chamber.org | (555) 123-4567</p>
+    <p>Jared Delgado | WDD 231</p>
+    <p>© <span id="year"></span></p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/directory.js"></script>
+</body>
+</html>

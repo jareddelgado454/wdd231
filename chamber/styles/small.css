@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #004d40;
+    color: white;
+  }
+  
+  header img {
+    width: 60px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    background-color: #00695c;
+    margin: 0;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+  
+  nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  .view-buttons {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .view-buttons button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  #members.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  #members.list {
+    display: block;
+  }
+  
+  .member-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .member-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  /* List view without images */
+#members.list img {
+    display: none;
+  }
+  
+  /* Improve list layout */
+  #members.list .member-card {
+    text-align: left;
+  }
+
+  
+  nav ul {
+    flex-wrap: wrap;
+  }
+  

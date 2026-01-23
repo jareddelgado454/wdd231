@@ -1,0 +1,10 @@
+@media (min-width: 768px) {
+    #members.grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    nav ul {
+      justify-content: space-evenly;
+    }
+  }
+  

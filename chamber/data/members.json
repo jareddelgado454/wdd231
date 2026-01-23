@@ -1,0 +1,67 @@
+{
+    "members": [
+      {
+        "name": "Tech Solutions",
+        "address": "123 Main St",
+        "phone": "555-1111",
+        "website": "https://techsolutions.com",
+        "image": "company1.jpg",
+        "membership": 3,
+        "description": "IT consulting services"
+      },
+      {
+        "name": "Green Market",
+        "address": "45 Green Ave",
+        "phone": "555-2222",
+        "website": "https://greenmarket.com",
+        "image": "company2.jpg",
+        "membership": 2,
+        "description": "Organic grocery store"
+      },
+      {
+        "name": "City Gym",
+        "address": "88 Fitness Rd",
+        "phone": "555-3333",
+        "website": "https://citygym.com",
+        "image": "company3.webp",
+        "membership": 1,
+        "description": "Fitness and wellness"
+      },
+      {
+        "name": "Auto Repair Pro",
+        "address": "77 Mechanic St",
+        "phone": "555-4444",
+        "website": "https://autorepairpro.com",
+        "image": "company4.png",
+        "membership": 2,
+        "description": "Vehicle repair services"
+      },
+      {
+        "name": "Coffee House",
+        "address": "12 Bean Blvd",
+        "phone": "555-5555",
+        "website": "https://coffeehouse.com",
+        "image": "company5.jpg",
+        "membership": 1,
+        "description": "Local coffee shop"
+      },
+      {
+        "name": "Design Studio",
+        "address": "9 Creative Way",
+        "phone": "555-6666",
+        "website": "https://designstudio.com",
+        "image": "company6.webp",
+        "membership": 3,
+        "description": "Graphic design services"
+      },
+      {
+        "name": "Law Firm Plus",
+        "address": "200 Justice Rd",
+        "phone": "555-7777",
+        "website": "https://lawfirmplus.com",
+        "image": "company7.jpg",
+        "membership": 2,
+        "description": "Legal services"
+      }
+    ]
+  }
