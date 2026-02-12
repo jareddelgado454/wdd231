@@ -1,6 +1,5 @@
 /* Tablet and Desktop Styles */
 @media (min-width: 768px) {
-  /* Header adjustments */
   header {
     padding: 1.5rem 2rem;
   }
@@ -9,7 +8,6 @@
     font-size: 1.75rem;
   }
 
-  /* Navigation */
   nav ul {
     justify-content: space-evenly;
     padding: 1rem;
@@ -21,7 +19,6 @@
     font-size: 1.05rem;
   }
 
-  /* Hero Section */
   .hero {
     height: 500px;
   }
@@ -40,36 +37,28 @@
     font-size: 1.2rem;
   }
 
-  /* Home Grid - 2 columns */
   .home-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     padding: 2rem;
   }
 
-  /* Weather sections layout */
-  .current-weather {
-    grid-column: span 1;
-  }
-
+  .current-weather,
   .weather-forecast {
     grid-column: span 1;
   }
 
-  /* Spotlights - 2 columns */
   #spotlight-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
 
-  /* Member grid - 3 columns */
   #members.grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding: 2rem;
   }
 
-  /* Section padding */
   section {
     padding: 2rem;
   }
@@ -78,7 +67,6 @@
     font-size: 1.75rem;
   }
 
-  /* Footer */
   footer {
     padding: 2.5rem 2rem;
   }
@@ -86,7 +74,6 @@
 
 /* Large Desktop Styles */
 @media (min-width: 1024px) {
-  /* Hero Section */
   .hero {
     height: 600px;
   }
@@ -100,14 +87,12 @@
     font-size: 2.5rem;
   }
 
-  /* Home Grid - 3 columns */
   .home-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
     padding: 2.5rem;
   }
 
-  /* Weather sections - Current Weather takes 2 columns, Forecast takes 1 */
   .current-weather {
     grid-column: span 2;
   }
@@ -124,20 +109,13 @@
     font-size: 3rem;
   }
 
-  /* Spotlights - 3 columns */
   #spotlight-container {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
 
-  /* Member grid - 4 columns */
   #members.grid {
     grid-template-columns: repeat(4, 1fr);
-  }
-
-  /* Better spacing */
-  main {
-    padding: 0;
   }
 }
 
