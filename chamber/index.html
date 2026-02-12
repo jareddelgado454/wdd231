@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>City Chamber of Commerce - Home</title>
+
+  <meta name="description" content="Welcome to the City Chamber of Commerce. Discover local events, weather updates, and featured businesses in our community.">
+
+  <meta name="author" content="Jared Delgado">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="images/favicon.png">
+
+  <meta property="og:title" content="City Chamber of Commerce Home">
+  <meta property="og:description" content="Connect with the City Chamber of Commerce. Explore member spotlights and local community highlights.">
+  <meta property="og:image" content="https://jareddelgado454.github.io/wdd231/chamber/images/logo.png">
+  <meta property="og:url" content="https://username.github.io/wdd231/chamber/index.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.png" alt="Chamber Logo">
+    <span>City Chamber of Commerce</span>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="#">Join</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <img src="images/hero-image.webp" alt="Beautiful view of our city" id="hero-img">
+      <div class="cta">
+        <p>Build your future with us.</p>
+        <a href="join.html" class="cta-button">Join the Chamber</a>
+      </div>
+    </section>
+
+    <div class="home-grid">
+      
+      <section class="events">
+        <h2>Current Events</h2>
+        <p>Networking Mixer - Oct 15th</p>
+        <p>Small Business Workshop - Oct 22nd</p>
+      </section>
+
+      <section class="weather current-weather">
+        <h2>Current Weather</h2>
+        <div id="current-weather-info">
+          <p>Loading weather data...</p>
+        </div>
+      </section>
+
+      <section class="weather weather-forecast">
+        <h2>Weather Forecast</h2>
+        <div id="weather-forecast-info">
+          <p>Loading forecast...</p>
+        </div>
+      </section>
+
+      <section class="spotlights">
+        <h2>Member Spotlights</h2>
+        <div id="spotlight-container">
+          </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Contact: info@chamber.org | (555) 123-4567</p>
+    <p>Jared Delgado | WDD 231</p>
+    <p>© <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/home.js" defer></script>
+</body>
+</html>

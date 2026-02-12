@@ -1,10 +1,157 @@
+/* Tablet and Desktop Styles */
 @media (min-width: 768px) {
-    #members.grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  
-    nav ul {
-      justify-content: space-evenly;
-    }
+  /* Header adjustments */
+  header {
+    padding: 1.5rem 2rem;
   }
-  
+
+  header span {
+    font-size: 1.75rem;
+  }
+
+  /* Navigation */
+  nav ul {
+    justify-content: space-evenly;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  nav a {
+    padding: 0.875rem 1.5rem;
+    font-size: 1.05rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    height: 500px;
+  }
+
+  .cta {
+    padding: 2.5rem 3rem;
+    max-width: 600px;
+  }
+
+  .cta p {
+    font-size: 2.25rem;
+  }
+
+  .cta-button {
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+  }
+
+  /* Home Grid - 2 columns */
+  .home-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  /* Weather sections layout */
+  .current-weather {
+    grid-column: span 1;
+  }
+
+  .weather-forecast {
+    grid-column: span 1;
+  }
+
+  /* Spotlights - 2 columns */
+  #spotlight-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* Member grid - 3 columns */
+  #members.grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  /* Section padding */
+  section {
+    padding: 2rem;
+  }
+
+  section h2 {
+    font-size: 1.75rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 2.5rem 2rem;
+  }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1024px) {
+  /* Hero Section */
+  .hero {
+    height: 600px;
+  }
+
+  .cta {
+    padding: 3rem 4rem;
+    max-width: 700px;
+  }
+
+  .cta p {
+    font-size: 2.5rem;
+  }
+
+  /* Home Grid - 3 columns */
+  .home-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    padding: 2.5rem;
+  }
+
+  /* Weather sections - Current Weather takes 2 columns, Forecast takes 1 */
+  .current-weather {
+    grid-column: span 2;
+  }
+
+  .weather-forecast {
+    grid-column: span 1;
+  }
+
+  .weather-icon-temp {
+    flex-direction: row;
+  }
+
+  .temp-main {
+    font-size: 3rem;
+  }
+
+  /* Spotlights - 3 columns */
+  #spotlight-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  /* Member grid - 4 columns */
+  #members.grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Better spacing */
+  main {
+    padding: 0;
+  }
+}
+
+/* Extra Large Screens */
+@media (min-width: 1400px) {
+  .home-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    max-width: 1400px;
+    margin: 0 auto 2rem auto;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+}
