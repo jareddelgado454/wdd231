@@ -133,3 +133,39 @@
     overflow: hidden;
   }
 }
+
+/* Join Page - Desktop Layout */
+@media (min-width: 768px) {
+  .join-container {
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    padding: 2rem;
+  }
+
+  .membership-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .application-summary dl {
+    grid-template-columns: 200px 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .join-container {
+    padding: 2.5rem;
+  }
+
+  form {
+    padding: 2.5rem;
+  }
+
+  .modal-content {
+    max-width: 700px;
+    padding: 3rem;
+  }
+}
