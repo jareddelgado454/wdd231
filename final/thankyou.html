@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thank you for registering your dojo in our directory.">
+  <title>Thank You - Dojos Directory</title>
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>🥊 Dojos Directory</h1>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav class="main-nav" id="mainNav" aria-hidden="true">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="thankyou-section">
+      <h2>Thank You for Your Application!</h2>
+      <p class="thankyou-message">We have received your information. We will review your application and contact you soon.</p>
+      
+      <div class="submission-summary">
+        <h3>Application Summary</h3>
+        <dl id="summaryList">
+          <!-- Dynamic content from JavaScript -->
+        </dl>
+      </div>
+
+      <div class="action-buttons">
+        <a href="index.html" class="btn-primary">Return Home</a>
+        <a href="directory.html" class="btn-secondary">View Directory</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> | Jared Delgado | WDD 231</p>
+    <p>
+      <a href="https://youtube.com" target="_blank" rel="noopener">Video Demo</a> | 
+      <a href="attributions.html">Attributions</a>
+    </p>
+  </footer>
+
+  <script type="module" src="scripts/thankyou.js"></script>
+</body>
+</html>

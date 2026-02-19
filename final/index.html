@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Directory of Kickboxing and Muay Thai dojos. Find the best place to train near you.">
+  <title>Dojos Directory - Kickboxing & Muay Thai</title>
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>🥊 Dojos Directory</h1>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav class="main-nav" id="mainNav" aria-hidden="true">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Creation</h2>
+        <blockquote>
+          <p>"Creation is one of the characteristics that defines the children of our Heavenly Father. He is the supreme Creator. We have the potential to create. It is not surprising that creation is such an important part of our earthly life."</p>
+          <cite>— Dieter F. Uchtdorf</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="featured-dojos">
+      <h2>Featured Dojos</h2>
+      <div class="dojos-grid" id="featuredDojos">
+        <p class="loading">Loading featured dojos...</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="dojoModal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <div id="modalBody">
+        <!-- Dynamic content -->
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> | Jared Delgado | WDD 231</p>
+    <p>
+      <a href="https://youtube.com" target="_blank" rel="noopener">Video Demo</a> | 
+      <a href="attributions.html">Attributions</a>
+    </p>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/index.js"></script>
+</body>
+</html>

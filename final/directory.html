@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore our complete directory of Kickboxing and Muay Thai dojos.">
+  <title>Complete Directory - Kickboxing & Muay Thai Dojos</title>
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>🥊 Dojos Directory</h1>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav class="main-nav" id="mainNav" aria-hidden="true">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="directory-header">
+      <h2>Dojos Directory</h2>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Kickboxing">Kickboxing</button>
+        <button class="filter-btn" data-filter="Muay Thai">Muay Thai</button>
+      </div>
+    </section>
+
+    <section class="dojos-container">
+      <div class="dojos-grid" id="dojosGrid">
+        <p class="loading">Loading dojos...</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="dojoModal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <div id="modalBody">
+        <!-- Dynamic content -->
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> | Jared Delgado | WDD 231</p>
+    <p>
+      <a href="https://youtube.com" target="_blank" rel="noopener">Video Demo</a> | 
+      <a href="attributions.html">Attributions</a>
+    </p>
+  </footer>
+
+  <script type="module" src="scripts/directory.js"></script>
+</body>
+</html>

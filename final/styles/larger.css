@@ -1,0 +1,174 @@
+/* Tablet and Desktop Styles */
+@media (min-width: 768px) {
+  /* Header */
+  header h1 {
+    font-size: 2.25rem;
+    letter-spacing: 4px;
+  }
+
+  .main-nav {
+    max-height: none;
+    overflow: visible;
+    background: transparent;
+    border-top: none;
+  }
+
+  .main-nav.active {
+    max-height: none;
+  }
+
+  .main-nav ul {
+    display: flex;
+    gap: 0;
+    padding: 0;
+  }
+
+  .main-nav li {
+    border-bottom: none;
+  }
+
+  .main-nav a {
+    padding: 1rem 2rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 4rem 3rem;
+  }
+
+  .hero-content h2 {
+    font-size: 3rem;
+    letter-spacing: 5px;
+  }
+
+  blockquote {
+    padding: 3rem;
+    font-size: 1.2rem;
+  }
+
+  blockquote::before {
+    font-size: 6rem;
+    top: -20px;
+  }
+
+  /* Dojos Grid */
+  .dojos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+
+  .dojo-card img {
+    height: 280px;
+  }
+
+  /* Filter Buttons */
+  .filter-buttons {
+    gap: 1.5rem;
+  }
+
+  .filter-btn {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.1rem;
+  }
+
+  /* Form */
+  form {
+    padding: 3rem;
+  }
+
+  fieldset {
+    padding: 2.5rem;
+  }
+
+  /* Submission Summary */
+  .submission-summary dl {
+    grid-template-columns: 250px 1fr;
+  }
+
+  .action-buttons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    flex: 0 1 250px;
+    padding: 1.5rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  main {
+    padding: 2.5rem;
+  }
+
+  .hero {
+    padding: 5rem 4rem;
+  }
+
+  .hero-content h2 {
+    font-size: 3.5rem;
+  }
+
+  section h2 {
+    font-size: 2.5rem;
+  }
+
+  section h2::after {
+    width: 150px;
+    height: 4px;
+  }
+
+  /* Dojos Grid */
+  .dojos-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .dojo-card img {
+    height: 320px;
+  }
+
+  .card-content {
+    padding: 2rem;
+  }
+
+  .card-content h3 {
+    font-size: 1.5rem;
+  }
+
+  /* Modal */
+  .modal-content {
+    max-width: 800px;
+  }
+
+  .modal-image {
+    height: 400px;
+  }
+
+  .modal-details {
+    padding: 2rem 3rem 3rem;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1400px) {
+  .dojos-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3.5rem;
+  }
+
+  .hero {
+    padding: 6rem 5rem;
+  }
+
+  .hero-content h2 {
+    font-size: 4rem;
+  }
+}

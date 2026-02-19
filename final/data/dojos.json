@@ -1,0 +1,154 @@
+{
+  "dojos": [
+    {
+      "id": 1,
+      "name": "Elite Kickboxing Academy",
+      "discipline": "Kickboxing",
+      "location": "Lima, Peru",
+      "monthly_price": 120,
+      "rating": 4.8,
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/High_kick_block.jpg",
+      "description": "Elite academy specialized in kickboxing with certified trainers and intensive programs for all levels."
+    },
+    {
+      "id": 2,
+      "name": "Muay Thai Warriors",
+      "discipline": "Muay Thai",
+      "location": "Bangkok, Thailand",
+      "monthly_price": 150,
+      "rating": 4.9,
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Muay_Thai_Fight_Us_Vs_Burma_%2880668065%29.jpeg",
+      "description": "Traditional Thai dojo with native masters. Authentic training in the art of 8 limbs."
+    },
+    {
+      "id": 3,
+      "name": "Combat Fitness Center",
+      "discipline": "Kickboxing",
+      "location": "Buenos Aires, Argentina",
+      "monthly_price": 95,
+      "rating": 4.6,
+      "image_url": "https://www.lecercle-boxing.com/wp-content/uploads/2023/07/difference-kick-boxing-et-boxe-thai-1024x512.jpg",
+      "description": "Fitness and combat center focused on kickboxing to improve physical condition and combat technique."
+    },
+    {
+      "id": 4,
+      "name": "Siam Muay Thai Academy",
+      "discipline": "Muay Thai",
+      "location": "Chiang Mai, Thailand",
+      "monthly_price": 80,
+      "rating": 4.7,
+      "image_url": "https://www.silanoemartialarts.com/wp-content/uploads/2018/04/Silanoe-Martial-Arts-Dutch-Kickboxing-Muay-Thai-program-in-San-Gabriel-CA-near-Pasadena-San-Marino-Alhambra-Monterey-Park-Temple-City-and-Arcadia-1024x683.jpg",
+      "description": "Traditional academy with intensive camps. Training in the heart of Thailand with local instructors."
+    },
+    {
+      "id": 5,
+      "name": "Power Kickboxing Studio",
+      "discipline": "Kickboxing",
+      "location": "Madrid, Spain",
+      "monthly_price": 110,
+      "rating": 4.5,
+      "image_url": "https://i.pinimg.com/736x/11/08/9e/11089ee61855626bcc83809629284236.jpg",
+      "description": "Modern kickboxing studio with group and individual classes. Motivating and professional environment."
+    },
+    {
+      "id": 6,
+      "name": "Bangkok Fight Club",
+      "discipline": "Muay Thai",
+      "location": "Bangkok, Thailand",
+      "monthly_price": 100,
+      "rating": 4.8,
+      "image_url": "https://i.pinimg.com/736x/cb/79/12/cb791298652cf3057db581215664c421.jpg",
+      "description": "Professional fighting club with first-class facilities. Preparation for competitions and recreational training."
+    },
+    {
+      "id": 7,
+      "name": "Urban Kickboxing",
+      "discipline": "Kickboxing",
+      "location": "New York, USA",
+      "monthly_price": 140,
+      "rating": 4.9,
+      "image_url": "https://i.pinimg.com/1200x/bd/23/2b/bd232be658951b4b42a13ae9d28c58d9.jpg",
+      "description": "Urban dojo with modern style. Dynamic classes and personalized programs to achieve your goals."
+    },
+    {
+      "id": 8,
+      "name": "Traditional Muay Thai Dojo",
+      "discipline": "Muay Thai",
+      "location": "Phuket, Thailand",
+      "monthly_price": 90,
+      "rating": 4.6,
+      "image_url": "https://i.pinimg.com/1200x/ee/18/9e/ee189e6159a8ecb6cfc10e25f6159ee2.jpg",
+      "description": "Traditional dojo that preserves the ancestral techniques of Muay Thai. Spiritual and physical training."
+    },
+    {
+      "id": 9,
+      "name": "Fight Academy Kickboxing",
+      "discipline": "Kickboxing",
+      "location": "São Paulo, Brazil",
+      "monthly_price": 85,
+      "rating": 4.7,
+      "image_url": "https://i.pinimg.com/1200x/96/e2/48/96e24813a2fe4b0873040abf5469e4d2.jpg",
+      "description": "Combat academy with programs for beginners and advanced students. Complete kickboxing training."
+    },
+    {
+      "id": 10,
+      "name": "Muay Thai Excellence",
+      "discipline": "Muay Thai",
+      "location": "Barcelona, Spain",
+      "monthly_price": 125,
+      "rating": 4.8,
+      "image_url": "https://i.pinimg.com/736x/74/53/84/745384d28ea6a65aff985292ec8595c4.jpg",
+      "description": "Center of excellence in Muay Thai with international instructors. Preparation for competition and self-defense."
+    },
+    {
+      "id": 11,
+      "name": "Elite Combat Kickboxing",
+      "discipline": "Kickboxing",
+      "location": "London, UK",
+      "monthly_price": 130,
+      "rating": 4.9,
+      "image_url": "https://i.pinimg.com/736x/6e/1f/2f/6e1f2f4b2b022206fa1d170f71d8f160.jpg",
+      "description": "Elite dojo with state-of-the-art facilities. Professional training and high-performance programs."
+    },
+    {
+      "id": 12,
+      "name": "Thai Boxing Heritage",
+      "discipline": "Muay Thai",
+      "location": "Ayutthaya, Thailand",
+      "monthly_price": 75,
+      "rating": 4.5,
+      "image_url": "https://i.pinimg.com/1200x/00/b0/de/00b0de11970eb40a90acd94a4f7a8970.jpg",
+      "description": "Preserving the heritage of Muay Thai. Traditional training in an authentic and respectful environment."
+    },
+    {
+      "id": 13,
+      "name": "Kickboxing Pro Training",
+      "discipline": "Kickboxing",
+      "location": "Mexico City, Mexico",
+      "monthly_price": 105,
+      "rating": 4.6,
+      "image_url": "https://i.pinimg.com/1200x/1e/58/08/1e5808ec55be15bf8ac81e65735c1d01.jpg",
+      "description": "Professional kickboxing training focused on technique and physical condition. Classes for all levels."
+    },
+    {
+      "id": 14,
+      "name": "Royal Muay Thai Academy",
+      "discipline": "Muay Thai",
+      "location": "Bangkok, Thailand",
+      "monthly_price": 160,
+      "rating": 5.0,
+      "image_url": "https://i.pinimg.com/1200x/88/5d/81/885d817fdb3cdf99844f4b9028830601.jpg",
+      "description": "Royal Muay Thai academy with internationally renowned masters. The highest level of traditional training."
+    },
+    {
+      "id": 15,
+      "name": "Dynamic Kickboxing Zone",
+      "discipline": "Kickboxing",
+      "location": "Sydney, Australia",
+      "monthly_price": 115,
+      "rating": 4.7,
+      "image_url": "https://i.pinimg.com/736x/5b/17/1a/5b171af4c6e4459123be5340952a71aa.jpg",
+      "description": "Dynamic kickboxing zone with intensive training. Effectively combines fitness and combat technique."
+    }
+  ]
+}

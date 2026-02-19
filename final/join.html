@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join our dojos directory. Complete the form to register your dojo.">
+  <title>Join - Dojo Registration</title>
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>🥊 Dojos Directory</h1>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav class="main-nav" id="mainNav" aria-hidden="true">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="join-section">
+      <h2>Dojo Registration</h2>
+      <form id="joinForm" method="get" action="thankyou.html">
+        <fieldset>
+          <legend>Dojo Information</legend>
+          
+          <label for="dojoName">
+            Dojo Name <span class="required">*</span>
+            <input 
+              type="text" 
+              id="dojoName" 
+              name="dojoName" 
+              required 
+              minlength="3"
+              pattern="[A-Za-z0-9\s\-]{3,}"
+              title="Enter the dojo name (minimum 3 characters, letters, numbers, spaces and hyphens only)"
+            >
+          </label>
+
+          <label for="discipline">
+            Discipline <span class="required">*</span>
+            <select id="discipline" name="discipline" required>
+              <option value="">Select a discipline</option>
+              <option value="Kickboxing">Kickboxing</option>
+              <option value="Muay Thai">Muay Thai</option>
+            </select>
+          </label>
+
+          <label for="location">
+            Location <span class="required">*</span>
+            <input 
+              type="text" 
+              id="location" 
+              name="location" 
+              required 
+              minlength="5"
+              title="Enter the dojo location (city, country)"
+            >
+          </label>
+
+          <label for="price">
+            Monthly Price (USD) <span class="required">*</span>
+            <input 
+              type="number" 
+              id="price" 
+              name="price" 
+              required 
+              min="0" 
+              step="0.01"
+              title="Enter the monthly price in dollars"
+            >
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Contact Information</legend>
+          
+          <label for="contactName">
+            Contact Name <span class="required">*</span>
+            <input 
+              type="text" 
+              id="contactName" 
+              name="contactName" 
+              required 
+              pattern="[A-Za-z\s]{2,}"
+              title="Enter your full name (letters and spaces only)"
+            >
+          </label>
+
+          <label for="email">
+            Email <span class="required">*</span>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              required 
+              placeholder="example@email.com"
+              title="Enter your email address"
+            >
+          </label>
+
+          <label for="phone">
+            Phone <span class="required">*</span>
+            <input 
+              type="tel" 
+              id="phone" 
+              name="phone" 
+              required 
+              pattern="[0-9\s\-\+]{10,}"
+              title="Enter your phone number"
+            >
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Description</legend>
+          
+          <label for="description">
+            Dojo Description
+            <textarea 
+              id="description" 
+              name="description" 
+              rows="5"
+              maxlength="500"
+              title="Describe your dojo (maximum 500 characters)"
+            ></textarea>
+            <small id="charCount">0 / 500 characters</small>
+          </label>
+        </fieldset>
+
+        <input type="hidden" id="timestamp" name="timestamp">
+
+        <button type="submit" class="submit-btn">Submit Application</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> | Jared Delgado | WDD 231</p>
+    <p>
+      <a href="https://youtube.com" target="_blank" rel="noopener">Video Demo</a> | 
+      <a href="attributions.html">Attributions</a>
+    </p>
+  </footer>
+
+  <script type="module" src="scripts/join.js"></script>
+</body>
+</html>
