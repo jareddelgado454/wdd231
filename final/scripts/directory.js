@@ -4,10 +4,8 @@ import { initModal } from './modal.js';
 let allDojos = [];
 let currentFilter = 'all';
 
-// Load dojos from localStorage or JSON
 async function loadDojos() {
   try {
-    // Try to load from localStorage first
     const savedFilter = localStorage.getItem('lastFilter');
     if (savedFilter) {
       currentFilter = savedFilter;
@@ -17,7 +15,6 @@ async function loadDojos() {
     allDojos = await fetchDojos();
     displayDojos(allDojos);
     
-    // Save to localStorage
     localStorage.setItem('dojos', JSON.stringify(allDojos));
   } catch (error) {
     console.error('Error loading dojos:', error);
@@ -28,7 +25,6 @@ async function loadDojos() {
   }
 }
 
-// Filter dojos
 function filterDojos(discipline) {
   currentFilter = discipline;
   localStorage.setItem('lastFilter', discipline);
@@ -42,7 +38,6 @@ function filterDojos(discipline) {
   updateFilterButtons(discipline);
 }
 
-// Update filter buttons
 function updateFilterButtons(activeFilter) {
   const buttons = document.querySelectorAll('.filter-btn');
   buttons.forEach(btn => {
@@ -54,7 +49,6 @@ function updateFilterButtons(activeFilter) {
   });
 }
 
-// Display dojos in grid
 function displayDojos(dojos) {
   const container = document.getElementById('dojosGrid');
   if (!container) return;
@@ -66,7 +60,6 @@ function displayDojos(dojos) {
 
   container.innerHTML = dojos.map(dojo => createDojoCard(dojo)).join('');
   
-  // Lazy load images
   const images = container.querySelectorAll('img[data-src]');
   if ('IntersectionObserver' in window) {
     const imageObserver = new IntersectionObserver((entries, observer) => {
@@ -92,7 +85,6 @@ function displayDojos(dojos) {
     });
   }
 
-  // Add event listeners to cards
   container.querySelectorAll('.dojo-card').forEach(card => {
     card.addEventListener('click', () => {
       const dojoId = parseInt(card.dataset.id);
@@ -102,7 +94,6 @@ function displayDojos(dojos) {
       }
     });
 
-    // Keyboard support
     card.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
@@ -136,7 +127,6 @@ function createDojoCard(dojo) {
   `;
 }
 
-// Event listeners for filters
 function initFilters() {
   const filterButtons = document.querySelectorAll('.filter-btn');
   filterButtons.forEach(btn => {
@@ -147,7 +137,6 @@ function initFilters() {
   });
 }
 
-// Initialize
 document.addEventListener('DOMContentLoaded', () => {
   loadDojos();
   initFilters();
