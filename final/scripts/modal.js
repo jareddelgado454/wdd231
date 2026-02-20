@@ -1,4 +1,4 @@
-// Modal functionality
+
 
 export function initModal(dojo) {
   const modal = document.getElementById('dojoModal');
@@ -6,7 +6,6 @@ export function initModal(dojo) {
   
   if (!modal || !modalBody) return;
 
-  // Create modal content
   modalBody.innerHTML = `
     <h2 id="modalTitle">${dojo.name}</h2>
     <img src="${dojo.image_url}" alt="${dojo.name}" class="modal-image">
@@ -20,31 +19,26 @@ export function initModal(dojo) {
     </div>
   `;
 
-  // Show modal
   modal.setAttribute('aria-hidden', 'false');
   modal.classList.add('active');
   document.body.style.overflow = 'hidden';
 
-  // Focus on modal
   const modalTitle = document.getElementById('modalTitle');
   if (modalTitle) {
     modalTitle.focus();
   }
 
-  // Event listeners to close
   const closeBtn = modal.querySelector('.modal-close');
   if (closeBtn) {
     closeBtn.addEventListener('click', closeModal);
   }
 
-  // Close on background click
   modal.addEventListener('click', (e) => {
     if (e.target === modal) {
       closeModal();
     }
   });
 
-  // Close with Escape
   const escapeHandler = (e) => {
     if (e.key === 'Escape') {
       closeModal();

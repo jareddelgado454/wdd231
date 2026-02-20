@@ -1,6 +1,4 @@
-// Utilidades compartidas
 
-// Fetch dojos desde JSON
 export async function fetchDojos() {
   try {
     const response = await fetch('data/dojos.json');
@@ -11,7 +9,6 @@ export async function fetchDojos() {
     return data.dojos;
   } catch (error) {
     console.error('Error fetching dojos:', error);
-    // Intentar cargar desde localStorage como fallback
     const saved = localStorage.getItem('dojos');
     if (saved) {
       return JSON.parse(saved);
