@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site plan for Dojos Directory - Kickboxing & Muay Thai project">
+  <title>Site Plan - Dojos Directory</title>
+  <style>
+    :root {
+      --primary-black: #000000;
+      --primary-red: #dc2626;
+      --accent-red: #ef4444;
+      --dark-red: #991b1b;
+      --text-white: #ffffff;
+      --text-light: #f5f5f5;
+      --text-gray: #d4d4d4;
+      --bg-black: #0a0a0a;
+      --bg-dark: #1a1a1a;
+      --bg-card: #1f1f1f;
+      --border-dark: #333333;
+      --shadow-red: rgba(220, 38, 38, 0.3);
+      --shadow-black: rgba(0, 0, 0, 0.5);
+      --gradient-red: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+      --gradient-dark: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Arial Black', 'Arial Bold', Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text-white);
+      background: var(--bg-black);
+      min-width: 320px;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(circle at 20% 50%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(220, 38, 38, 0.1) 0%, transparent 50%);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    header {
+      background: var(--gradient-dark);
+      color: var(--text-white);
+      padding: 2rem 1.5rem;
+      box-shadow: 0 4px 20px var(--shadow-black);
+      border-bottom: 3px solid var(--primary-red);
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      background: var(--gradient-red);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 0 0 20px var(--shadow-red);
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: var(--text-gray);
+      font-size: 1.1rem;
+    }
+
+    section {
+      background: var(--gradient-dark);
+      margin: 2rem 0;
+      padding: 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 32px var(--shadow-black);
+      border: 2px solid var(--primary-red);
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: var(--primary-red);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative;
+      padding-bottom: 1rem;
+    }
+
+    section h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100px;
+      height: 3px;
+      background: var(--gradient-red);
+      box-shadow: 0 0 10px var(--shadow-red);
+    }
+
+    section h3 {
+      font-size: 1.5rem;
+      margin: 2rem 0 1rem;
+      color: var(--accent-red);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    p, li {
+      color: var(--text-light);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      margin-left: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.75rem;
+    }
+
+    .color-palette {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .color-item {
+      background: var(--bg-card);
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 2px solid var(--border-dark);
+      text-align: center;
+    }
+
+    .color-swatch {
+      width: 100%;
+      height: 100px;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 15px var(--shadow-black);
+    }
+
+    .color-name {
+      font-weight: 700;
+      color: var(--primary-red);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+    }
+
+    .color-hex {
+      color: var(--text-gray);
+      font-family: 'Courier New', monospace;
+      font-size: 0.9rem;
+    }
+
+    .typography-sample {
+      background: var(--bg-card);
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 2px solid var(--border-dark);
+      margin: 1rem 0;
+    }
+
+    .typography-sample h4 {
+      color: var(--primary-red);
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .font-name {
+      color: var(--text-gray);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .wireframe-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .wireframe-item {
+      background: var(--bg-card);
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 2px solid var(--border-dark);
+      text-align: center;
+    }
+
+    .wireframe-item h4 {
+      color: var(--primary-red);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .wireframe-placeholder {
+      width: 100%;
+      min-height: 500px;
+      background: var(--bg-dark);
+      border: 2px dashed var(--border-dark);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-gray);
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      padding: 1rem;
+    }
+
+    .wireframe-placeholder img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+
+    .scenario-box {
+      background: rgba(220, 38, 38, 0.1);
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 5px solid var(--primary-red);
+      margin: 1.5rem 0;
+    }
+
+    .scenario-box h4 {
+      color: var(--accent-red);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    footer {
+      background: var(--gradient-dark);
+      color: var(--text-white);
+      text-align: center;
+      padding: 2.5rem 1rem;
+      margin-top: 4rem;
+      border-top: 3px solid var(--primary-red);
+    }
+
+    @media (min-width: 768px) {
+      .wireframe-placeholder {
+        min-height: 600px;
+      }
+
+      .color-palette {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      header h1 {
+        font-size: 3.5rem;
+      }
+
+      .container {
+        padding: 3rem 2rem;
+      }
+
+      section {
+        padding: 3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Site Plan</h1>
+    <p>Dojos Directory - Kickboxing & Muay Thai</p>
+  </header>
+
+  <div class="container">
+    <!-- Site Name and Purpose -->
+    <section id="site-name">
+      <h2>Site Name and Purpose</h2>
+      
+      <h3>Site Name</h3>
+      <p><strong>Dojos Directory</strong> - Kickboxing & Muay Thai</p>
+      
+      <h3>Site Purpose</h3>
+      <p>
+        The Dojos Directory is a comprehensive online platform designed to connect martial arts enthusiasts 
+        with Kickboxing and Muay Thai training facilities worldwide. The site serves as a centralized directory 
+        where users can discover, compare, and explore dojos based on location, discipline, pricing, and ratings. 
+        It provides detailed information about each facility, including contact details, monthly pricing, 
+        discipline specialization, and user ratings, enabling prospective students to make informed decisions 
+        about their martial arts training journey.
+      </p>
+      <p>
+        Additionally, the platform allows dojo owners to register their facilities, expanding the directory 
+        and creating a growing community of martial arts practitioners and training centers.
+      </p>
+    </section>
+
+    <!-- Scenarios -->
+    <section id="scenarios">
+      <h2>Scenarios</h2>
+      
+      <div class="scenario-box">
+        <h4>Scenario 1: Finding a Local Dojo</h4>
+        <p>
+          <strong>User:</strong> Maria, a 28-year-old professional who recently moved to a new city and wants 
+          to start training in Muay Thai.
+        </p>
+        <p>
+          <strong>Goal:</strong> Maria needs to find a Muay Thai dojo near her location that fits her budget 
+          and schedule. She visits the Dojos Directory homepage, sees featured dojos, then navigates to the 
+          complete directory page. She uses the filter buttons to show only "Muay Thai" dojos, browses 
+          through the results, and clicks on cards to view detailed information in the modal, including 
+          location, monthly price, rating, and description. She finds a dojo that matches her criteria 
+          and contacts them directly.
+        </p>
+      </div>
+
+      <div class="scenario-box">
+        <h4>Scenario 2: Comparing Dojos and Registering</h4>
+        <p>
+          <strong>User:</strong> Carlos, a 35-year-old martial arts enthusiast who wants to compare 
+          different Kickboxing dojos before making a decision.
+        </p>
+        <p>
+          <strong>Goal:</strong> Carlos wants to compare prices, locations, and ratings of multiple 
+          Kickboxing dojos. He navigates to the directory page, filters by "Kickboxing" discipline, 
+          and views multiple dojo cards. He clicks on each card to see detailed information in the modal, 
+          comparing monthly prices, locations, and ratings. After finding the best option, he also notices 
+          the "Join" page and decides to register his own small dojo to expand the directory's reach.
+        </p>
+      </div>
+    </section>
+
+    <!-- Color Schema -->
+    <section id="color-schema">
+      <h2>Color Schema</h2>
+      <p>The color palette is designed to reflect the intensity and energy of martial arts, using a bold 
+      black and red theme that creates a professional yet dynamic visual identity.</p>
+      
+      <div class="color-palette">
+        <div class="color-item">
+          <div class="color-swatch" style="background: #000000;"></div>
+          <div class="color-name">Primary Black</div>
+          <div class="color-hex">#000000</div>
+        </div>
+        
+        <div class="color-item">
+          <div class="color-swatch" style="background: #dc2626;"></div>
+          <div class="color-name">Primary Red</div>
+          <div class="color-hex">#dc2626</div>
+        </div>
+        
+        <div class="color-item">
+          <div class="color-swatch" style="background: #ef4444;"></div>
+          <div class="color-name">Accent Red</div>
+          <div class="color-hex">#ef4444</div>
+        </div>
+        
+        <div class="color-item">
+          <div class="color-swatch" style="background: #991b1b;"></div>
+          <div class="color-name">Dark Red</div>
+          <div class="color-hex">#991b1b</div>
+        </div>
+        
+        <div class="color-item">
+          <div class="color-swatch" style="background: #ffffff; border: 1px solid #333;"></div>
+          <div class="color-name">Text White</div>
+          <div class="color-hex">#ffffff</div>
+        </div>
+        
+        <div class="color-item">
+          <div class="color-swatch" style="background: #f5f5f5; border: 1px solid #333;"></div>
+          <div class="color-name">Text Light</div>
+          <div class="color-hex">#f5f5f5</div>
+        </div>
+        
+        <div class="color-item">
+          <div class="color-swatch" style="background: #d4d4d4; border: 1px solid #333;"></div>
+          <div class="color-name">Text Gray</div>
+          <div class="color-hex">#d4d4d4</div>
+        </div>
+        
+        <div class="color-item">
+          <div class="color-swatch" style="background: #0a0a0a;"></div>
+          <div class="color-name">Background Black</div>
+          <div class="color-hex">#0a0a0a</div>
+        </div>
+        
+        <div class="color-item">
+          <div class="color-swatch" style="background: #1a1a1a;"></div>
+          <div class="color-name">Background Dark</div>
+          <div class="color-hex">#1a1a1a</div>
+        </div>
+        
+        <div class="color-item">
+          <div class="color-swatch" style="background: #1f1f1f;"></div>
+          <div class="color-name">Card Background</div>
+          <div class="color-hex">#1f1f1f</div>
+        </div>
+        
+        <div class="color-item">
+          <div class="color-swatch" style="background: #333333;"></div>
+          <div class="color-name">Border Dark</div>
+          <div class="color-hex">#333333</div>
+        </div>
+      </div>
+
+      <h3>Color Usage</h3>
+      <ul>
+        <li><strong>Primary Black (#000000):</strong> Used for main text elements and strong contrast areas</li>
+        <li><strong>Primary Red (#dc2626):</strong> Primary accent color for headings, buttons, and key interactive elements</li>
+        <li><strong>Accent Red (#ef4444):</strong> Used for hover states, secondary accents, and highlights</li>
+        <li><strong>Dark Red (#991b1b):</strong> Used in gradients and shadow effects for depth</li>
+        <li><strong>Text White (#ffffff):</strong> Primary text color on dark backgrounds</li>
+        <li><strong>Text Light (#f5f5f5):</strong> Secondary text color for better readability</li>
+        <li><strong>Text Gray (#d4d4d4):</strong> Tertiary text color for less important information</li>
+        <li><strong>Background Black (#0a0a0a):</strong> Main page background</li>
+        <li><strong>Background Dark (#1a1a1a):</strong> Card and section backgrounds</li>
+        <li><strong>Card Background (#1f1f1f):</strong> Individual card backgrounds</li>
+        <li><strong>Border Dark (#333333):</strong> Borders and dividers</li>
+      </ul>
+    </section>
+
+    <!-- Typography -->
+    <section id="typography">
+      <h2>Typography</h2>
+      <p>The typography uses a bold, sans-serif font family to match the strong and dynamic nature of martial arts.</p>
+      
+      <div class="typography-sample">
+        <h4>Primary Font Family</h4>
+        <div class="font-name">'Arial Black', 'Arial Bold', Arial, sans-serif</div>
+        <h3 style="color: var(--primary-red);">Heading Example</h3>
+        <p>This is a paragraph example showing the body text style. The font provides excellent readability and a bold, confident appearance that aligns with the martial arts theme.</p>
+        <p style="font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-red);">
+          Uppercase Bold Text Example
+        </p>
+      </div>
+
+      <h3>Font Usage</h3>
+      <ul>
+        <li><strong>Headings:</strong> Arial Black/Bold with uppercase transformation and letter spacing for impact</li>
+        <li><strong>Body Text:</strong> Arial for readability and consistency</li>
+        <li><strong>Buttons & Navigation:</strong> Bold weight with uppercase and letter spacing for emphasis</li>
+        <li><strong>Special Elements:</strong> Uppercase transformation with increased letter spacing for visual hierarchy</li>
+      </ul>
+
+      <h3>Google Fonts</h3>
+      <p>This project uses system fonts (Arial family) for optimal performance and consistency across all devices. No external Google Fonts are imported, ensuring fast loading times and reliable rendering.</p>
+    </section>
+
+    <!-- Wireframes -->
+    <section id="wireframes">
+      <h2>Wireframes</h2>
+      <p>Below are the wireframe layouts for mobile and desktop views. The wireframes illustrate the structure and layout of key pages in the Dojos Directory.</p>
+      
+      <div class="wireframe-container">
+        <div class="wireframe-item" style="grid-column: 1 / -1;">
+          <h4>Mobile & Desktop Wireframes</h4>
+          <div class="wireframe-placeholder">
+            <img src="images/wireframe.png" alt="Mobile and Desktop wireframes" onerror="this.parentElement.innerHTML='<p>wireframe.png<br>Place your wireframe image here</p>'">
+          </div>
+          <p>The wireframe image above shows both mobile and desktop layouts. The mobile layout (left) is optimized for screens 320px and above, featuring a hamburger menu, single-column card layout, and touch-friendly interface elements. The desktop layout (right) is designed for screens 1024px and above, featuring a horizontal navigation menu, multi-column grid layout for dojo cards, and enhanced spacing for better visual hierarchy.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> | Jared Delgado | WDD 231</p>
+    <p>Site Plan - Dojos Directory Project</p>
+  </footer>
+
+  <script>
+    // Update current year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
